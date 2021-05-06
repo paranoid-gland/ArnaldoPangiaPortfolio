@@ -1,5 +1,5 @@
 from flask import Flask, render_template
-from phrasal_verb import new_phrasal_verb
+from phrasal_verb import definition, generated_verb
 
 
 app = Flask(__name__)
@@ -22,7 +22,11 @@ def seagull():
 
 @app.route('/generators')
 def generators():
-    return render_template("generator.html", data= {"generated_sentence":new_phrasal_verb()} )
+    return render_template("generator.html", data= {
+        "definition":definition(),
+        "verb":generated_verb() 
+        }
+    )
 
 
 

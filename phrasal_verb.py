@@ -55,12 +55,11 @@ preposition_list = ["up",
         "out",
         "upon",
         ]
+def generated_verb():
+    verb_list_marker = random.choice(range(len(verb_list)))
+    preposition_list_marker = random.choice(range(len(preposition_list)))
 
-verb_list_marker = random.choice(range(len(verb_list)))
-preposition_list_marker = random.choice(range(len(preposition_list)))
-
-print("{} {}".format(verb_list[verb_list_marker],preposition_list[preposition_list_marker]))
-print("-"*10)
+    return "{} {}".format(verb_list[verb_list_marker],preposition_list[preposition_list_marker])
 
 definition_verb = ["reiterate",
         "illustrate",
@@ -134,14 +133,7 @@ definition_adverb = ["viciously",
         "in secrecy"]
 
 
-
-definition_verb_marker = random.choice(range(len(definition_verb)))
-definition_object_marker = random.choice(range(len(definition_object)))
-definition_adverb_marker = random.choice(range(len(definition_object)))
-
-print("(Definition): To {} {} {}.".format(definition_verb[definition_verb_marker],definition_object[definition_object_marker],definition_adverb[definition_adverb_marker]))
-
-def new_phrasal_verb():
+def definition():
     definition_verb_marker = random.choice(range(len(definition_verb)))
     definition_object_marker = random.choice(range(len(definition_object)))
     definition_adverb_marker = random.choice(range(len(definition_object)))
