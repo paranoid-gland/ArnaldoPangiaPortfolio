@@ -20,9 +20,9 @@ def test():
 def seagull():
     return render_template("seagull.html")
 
-@app.route('/generators')
-def generators():
-    return render_template("generator.html", data= {
+@app.route('/phrasal_verb')
+def phrasal_verb():
+    return render_template("phrasal_verb.html", data= {
         "definition":definition(),
         "verb":generated_verb() 
         }

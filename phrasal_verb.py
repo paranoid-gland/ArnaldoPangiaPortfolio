@@ -22,10 +22,10 @@ verb_list = ["Get",
         "Bark",
         "Plough",
         "Bear",
-        "goat",
-        "be",
-        "do",
-        "go"
+        "Goat",
+        "Be",
+        "Do",
+        "Go"
         ]
 
 preposition_list = ["up",
@@ -138,7 +138,7 @@ def definition():
     definition_object_marker = random.choice(range(len(definition_object)))
     definition_adverb_marker = random.choice(range(len(definition_object)))
 
-    return "(Definition): To {} {} {}.".format(
+    return "To {} {} {}.".format(
             definition_verb[definition_verb_marker],
             definition_object[definition_object_marker],
             definition_adverb[definition_adverb_marker])

@@ -1,8 +1,12 @@
 {% extends 'base.html' %}
 {% block content %}
 
-<h1> {{data.verb }} </h1>
-<p> {{ data.definition }} </p>
 
+<div class="container">
+  <div class="jumbotron">
+	  <h1><center> {{data.verb }} </center></h1>
+	  <hr class="solid">
+	  <p><center><i> Definition</i>: {{ data.definition }} </center></p>
 
+  </div>
 {% endblock %}
