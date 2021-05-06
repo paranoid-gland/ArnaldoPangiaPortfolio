@@ -140,3 +140,13 @@ definition_object_marker = random.choice(range(len(definition_object)))
 definition_adverb_marker = random.choice(range(len(definition_object)))
 
 print("(Definition): To {} {} {}.".format(definition_verb[definition_verb_marker],definition_object[definition_object_marker],definition_adverb[definition_adverb_marker]))
+
+def new_phrasal_verb():
+    definition_verb_marker = random.choice(range(len(definition_verb)))
+    definition_object_marker = random.choice(range(len(definition_object)))
+    definition_adverb_marker = random.choice(range(len(definition_object)))
+
+    return "(Definition): To {} {} {}.".format(
+            definition_verb[definition_verb_marker],
+            definition_object[definition_object_marker],
+            definition_adverb[definition_adverb_marker])

@@ -1,4 +1,5 @@
 from flask import Flask, render_template
+from phrasal_verb import new_phrasal_verb
 
 
 app = Flask(__name__)
@@ -18,6 +19,12 @@ def test():
 @app.route('/seagull')
 def seagull():
     return render_template("seagull.html")
+
+@app.route('/generators')
+def generators():
+    return render_template("generator.html", data= {"generated_sentence":new_phrasal_verb()} )
+
+
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8000', debug = True)
