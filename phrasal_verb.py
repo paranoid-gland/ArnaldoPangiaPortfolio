@@ -136,7 +136,7 @@ definition_adverb = ["viciously",
 def definition():
     definition_verb_marker = random.choice(range(len(definition_verb)))
     definition_object_marker = random.choice(range(len(definition_object)))
-    definition_adverb_marker = random.choice(range(len(definition_object)))
+    definition_adverb_marker = random.choice(range(len(definition_adverb)))
 
     return "To {} {} {}.".format(
             definition_verb[definition_verb_marker],
