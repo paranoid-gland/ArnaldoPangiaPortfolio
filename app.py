@@ -28,6 +28,15 @@ def phrasal_verb():
         }
     )
 
+@app.route('/burgeramt')
+def burgeramt():
+    return render_template("burgeramt.html", data= {
+        "dialogue_part1":dialogue_part1(),
+        "dialogue_part2":dialogue_part2(),
+        "dialogue_part3":dialogue_part3(),
+        "dialogue_part4":dialogue_part4()
+        }
+    )
 
 
 if __name__ == '__main__':
