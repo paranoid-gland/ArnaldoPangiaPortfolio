@@ -1,4 +1,5 @@
 import random
+
 excuse_list = ["Entschuldigung",
                "Entschuldung",
                "Entschuldame mucho",
@@ -91,6 +92,7 @@ was_ist_das_wrong_list = ["Wat it das",
                           "Das ist was",
                           "Was...Was it ist"]
 
+
 def dialogue_part1():
     excuse_marker = random.choice(range(len(excuse_list)))
     spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
@@ -99,14 +101,6 @@ def dialogue_part1():
     return "- Naja. Was brauchen Sie?"
 
 
-#excuse_marker= random.choice(range(len(excuse_list)))
-#spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
-
-#print("- Guten Tag! {}, Ich {} nur ein bisschen deutsch."
-#      .format(excuse_list[excuse_marker], spreche_wrong_list[spreche_wrong_marker]))
-
-#print("- Naja. Was brauchen Sie?")
-
 def dialogue_part2():
     brauche_wrong_marker= random.choice(range(len(brauche_wrong_list)))
     document_part1_marker = random.choice(range(len(document_part1_list)))
@@ -114,7 +108,8 @@ def dialogue_part2():
     document_part3_marker = random.choice(range(len(document_part3_list)))
 
     return "- Ich {} ein {}{}{}.".format(brauche_wrong_list[brauche_wrong_marker],
-              document_part1_list[document_part1_marker],document_part2_list[document_part2_marker],document_part3_list[document_part3_marker]))
+              document_part1_list[document_part1_marker],document_part2_list[document_part2_marker],document_part3_list[document_part3_marker])
+
 
 def dialogue_part3():
     document_part1_marker = random.choice(range(len(document_part1_list)))
@@ -123,10 +118,10 @@ def dialogue_part3():
 
     return "- Haben Sie die {}{}{} mitgebracht?".format(document_part1_list[document_part1_marker],document_part2_list[document_part2_marker], document_part3_list[document_part3_marker])
 
+
 def dialogue_part4():
     exclamation_marker = random.choice(range(len(exclamation_list)))
     was_ist_das_wrong_marker = random.choice(range(len(was_ist_das_wrong_list)))
-    return "- {}! {}?"
-      .format(exclamation_list[exclamation_marker], was_ist_das_wrong_list[was_ist_das_wrong_marker])
+    return "- {}! {}?".format(exclamation_list[exclamation_marker], was_ist_das_wrong_list[was_ist_das_wrong_marker])
     return "- Ohne {}{}{} kann ich nichts machen. Nehmen Sie einen anderen Termin und kommen Sie zurück.".format(document_part1_list[document_part1_marker],document_part2_list[document_part2_marker],document_part3_list[document_part3_marker])
     return"  Nächster!"

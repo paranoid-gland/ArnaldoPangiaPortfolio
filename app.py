@@ -1,5 +1,6 @@
 from flask import Flask, render_template
 from phrasal_verb import definition, generated_verb
+from burgeramt import dialogue_part1, dialogue_part2, dialogue_part3, dialogue_part4
 
 
 app = Flask(__name__)
@@ -31,10 +32,11 @@ def phrasal_verb():
 @app.route('/burgeramt')
 def burgeramt():
     return render_template("burgeramt.html", data= {
-        "dialogue_part1":dialogue_part1(),
-        "dialogue_part2":dialogue_part2(),
-        "dialogue_part3":dialogue_part3(),
-        "dialogue_part4":dialogue_part4()
+        "part1":dialogue_part1(),
+        "part2":dialogue_part2(),
+        "part3":dialogue_part3(),
+        "part4":dialogue_part4()
+
         }
     )
 
