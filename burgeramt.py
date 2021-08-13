@@ -79,7 +79,8 @@ exclamation_list = ["Holy Moly Guacamoley",
                     "Oh for Pete's sake",
                     "Was",
                     "Say whaaaaaaaaat?",
-                    "Scheißerino!"]
+                    "Scheißerino!",
+                    "N...nan desu-ka?!"]
 
 was_ist_das_wrong_list = ["Wat it das",
                           "Was ist das",
@@ -92,15 +93,29 @@ was_ist_das_wrong_list = ["Wat it das",
                           "Das ist was",
                           "Was...Was it ist"]
 
-
 def dialogue_part1():
+#    excuse_marker = random.choice(range(len(excuse_list)))
+#    spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
     excuse_marker = random.choice(range(len(excuse_list)))
     spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
-    return "- Guten Tag! {}, Ich {} nur ein bisschen deutsch.".format(excuse_list[excuse_marker], spreche_wrong_list[spreche_wrong_marker])
+    excuse= (excuse_list[excuse_marker])
+    spreche_wrong= (spreche_wrong_list[spreche_wrong_marker])
+
+    return "- Guten Tag! {}, Ich {} nur ein bisschen deutsch.".format(excuse, spreche_wrong)
 
 
 def dialogue_part2():    
     return "- Naja. Was brauchen Sie?"
+
+brauche_wrong_marker= random.choice(range(len(brauche_wrong_list)))
+document_part1_marker = random.choice(range(len(document_part1_list)))
+document_part2_marker = random.choice(range(len(document_part2_list)))
+document_part3_marker = random.choice(range(len(document_part3_list)))
+
+brauche_wrong= (brauche_wrong_list[brauche_wrong_marker])
+document_part1= (document_part1_list[document_part1_marker])
+document_part2= (document_part2_list[document_part2_marker])
+document_part3= (document_part3_list[document_part3_marker])
 
 
 def dialogue_part3():
@@ -108,15 +123,30 @@ def dialogue_part3():
     document_part1_marker = random.choice(range(len(document_part1_list)))
     document_part2_marker = random.choice(range(len(document_part2_list)))
     document_part3_marker = random.choice(range(len(document_part3_list)))
-    return "- Ich {} ein {}{}{}.".format(brauche_wrong_list[brauche_wrong_marker],
-              document_part1_list[document_part1_marker],document_part2_list[document_part2_marker],document_part3_list[document_part3_marker])
+    brauche_wrong= (brauche_wrong_list[brauche_wrong_marker])
+    document_part1= (document_part1_list[document_part1_marker])
+    document_part2= (document_part2_list[document_part2_marker])
+    document_part3= (document_part3_list[document_part3_marker])
+    return "- Ich {} ein {}{}{}.".format(brauche_wrong, document_part1, document_part2, document_part3)
+
+
+document_part1_marker = random.choice(range(len(document_part1_list)))
+document_part2_marker = random.choice(range(len(document_part2_list)))
+document_part3_marker = random.choice(range(len(document_part3_list)))
+
+document_part1= (document_part1_list[document_part1_marker])
+document_part2= (document_part2_list[document_part2_marker])
+document_part3= (document_part3_list[document_part3_marker])
 
 
 def dialogue_part4():
     document_part1_marker = random.choice(range(len(document_part1_list)))
     document_part2_marker = random.choice(range(len(document_part2_list)))
     document_part3_marker = random.choice(range(len(document_part3_list)))
-    return "- Haben Sie die {}{}{} mitgebracht?".format(document_part1_list[document_part1_marker],document_part2_list[document_part2_marker], document_part3_list[document_part3_marker])
+    document_part1= (document_part1_list[document_part1_marker])
+    document_part2= (document_part2_list[document_part2_marker])
+    document_part3= (document_part3_list[document_part3_marker])
+    return "- Haben Sie die {}{}{} mitgebracht?".format(document_part1, document_part2, document_part3,)
 
 
 def dialogue_part5():
@@ -126,8 +156,8 @@ def dialogue_part5():
 
 
 def dialogue_part6():
-    return "- Ohne {}{}{} kann ich nichts machen. Nehmen Sie einen anderen Termin und kommen Sie zurück.".format(document_part1_list[document_part1_marker],document_part2_list[document_part2_marker],document_part3_list[document_part3_marker])
+    return "- Das ist ein wichtiges Dokument. Nehmen Sie einen anderen Termin und kommen Sie zurück. Nächster!"
 
 
 def dialogue_part7():
-    return"  Nächster!"
+    return"-  Nächster!"

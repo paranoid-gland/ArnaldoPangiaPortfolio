@@ -37,8 +37,8 @@ def burgeramt():
         "part3":dialogue_part3(),
         "part4":dialogue_part4(),
         "part5":dialogue_part5(),
-        #"part6":dialogue_part6()
-        "part7":dialogue_part7()
+        "part6":dialogue_part6(),
+        #"part7":dialogue_part7()
         }
     )
 
