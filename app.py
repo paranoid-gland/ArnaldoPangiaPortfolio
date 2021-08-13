@@ -34,11 +34,7 @@ def burgeramt():
     return render_template("burgeramt.html", data= {
         "part1":dialogue_part1(),
         "part2":dialogue_part2(),
-        "part3":dialogue_part3(),
-        "part4":dialogue_part4(),
-        "part5":dialogue_part5(),
-        "part6":dialogue_part6(),
-        #"part7":dialogue_part7()
+
         }
     )
 

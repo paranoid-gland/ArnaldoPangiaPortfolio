@@ -94,18 +94,15 @@ was_ist_das_wrong_list = ["Wat it das",
                           "Was...Was it ist"]
 
 def dialogue_part1():
-#    excuse_marker = random.choice(range(len(excuse_list)))
-#    spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
     excuse_marker = random.choice(range(len(excuse_list)))
-    spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
     excuse= (excuse_list[excuse_marker])
+    return excuse
+
+def dialogue_part2():
+    spreche_wrong_marker = random.choice(range(len(spreche_wrong_list)))
     spreche_wrong= (spreche_wrong_list[spreche_wrong_marker])
+    return spreche_wrong
 
-    return "- Guten Tag! {}, Ich {} nur ein bisschen deutsch.".format(excuse, spreche_wrong)
-
-
-def dialogue_part2():    
-    return "- Naja. Was brauchen Sie?"
 
 brauche_wrong_marker= random.choice(range(len(brauche_wrong_list)))
 document_part1_marker = random.choice(range(len(document_part1_list)))
