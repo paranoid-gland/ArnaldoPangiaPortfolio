@@ -103,58 +103,37 @@ def dialogue_part2():
     spreche_wrong= (spreche_wrong_list[spreche_wrong_marker])
     return spreche_wrong
 
-
-brauche_wrong_marker= random.choice(range(len(brauche_wrong_list)))
-document_part1_marker = random.choice(range(len(document_part1_list)))
-document_part2_marker = random.choice(range(len(document_part2_list)))
-document_part3_marker = random.choice(range(len(document_part3_list)))
-
-brauche_wrong= (brauche_wrong_list[brauche_wrong_marker])
-document_part1= (document_part1_list[document_part1_marker])
-document_part2= (document_part2_list[document_part2_marker])
-document_part3= (document_part3_list[document_part3_marker])
-
-
 def dialogue_part3():
     brauche_wrong_marker= random.choice(range(len(brauche_wrong_list)))
-    document_part1_marker = random.choice(range(len(document_part1_list)))
-    document_part2_marker = random.choice(range(len(document_part2_list)))
-    document_part3_marker = random.choice(range(len(document_part3_list)))
     brauche_wrong= (brauche_wrong_list[brauche_wrong_marker])
-    document_part1= (document_part1_list[document_part1_marker])
-    document_part2= (document_part2_list[document_part2_marker])
-    document_part3= (document_part3_list[document_part3_marker])
-    return "- Ich {} ein {}{}{}.".format(brauche_wrong, document_part1, document_part2, document_part3)
-
-
-document_part1_marker = random.choice(range(len(document_part1_list)))
-document_part2_marker = random.choice(range(len(document_part2_list)))
-document_part3_marker = random.choice(range(len(document_part3_list)))
-
-document_part1= (document_part1_list[document_part1_marker])
-document_part2= (document_part2_list[document_part2_marker])
-document_part3= (document_part3_list[document_part3_marker])
-
+    return brauche_wrong
 
 def dialogue_part4():
     document_part1_marker = random.choice(range(len(document_part1_list)))
     document_part2_marker = random.choice(range(len(document_part2_list)))
     document_part3_marker = random.choice(range(len(document_part3_list)))
-    document_part1= (document_part1_list[document_part1_marker])
-    document_part2= (document_part2_list[document_part2_marker])
-    document_part3= (document_part3_list[document_part3_marker])
-    return "- Haben Sie die {}{}{} mitgebracht?".format(document_part1, document_part2, document_part3,)
-
+    document1_tuple= (document_part1_list[document_part1_marker],
+            document_part2_list[document_part2_marker],
+            document_part3_list[document_part3_marker])
+    document1= "".join(document1_tuple)
+    return document1
 
 def dialogue_part5():
-    exclamation_marker = random.choice(range(len(exclamation_list)))
-    was_ist_das_wrong_marker = random.choice(range(len(was_ist_das_wrong_list)))
-    return "- {}! {}?".format(exclamation_list[exclamation_marker], was_ist_das_wrong_list[was_ist_das_wrong_marker])
-
+    document_part1_marker = random.choice(range(len(document_part1_list)))
+    document_part2_marker = random.choice(range(len(document_part2_list)))
+    document_part3_marker = random.choice(range(len(document_part3_list)))
+    document2_tuple= (document_part1_list[document_part1_marker],
+            document_part2_list[document_part2_marker],
+            document_part3_list[document_part3_marker])
+    document2= "".join(document2_tuple)
+    return document2
 
 def dialogue_part6():
-    return "- Das ist ein wichtiges Dokument. Nehmen Sie einen anderen Termin und kommen Sie zurück. Nächster!"
-
+    exclamation_marker =random.choice(range(len(exclamation_list)))
+    exclamation= (exclamation_list[exclamation_marker])
+    return exclamation 
 
 def dialogue_part7():
-    return"-  Nächster!"
+    was_ist_das_wrong_marker = random.choice(range(len(was_ist_das_wrong_list)))
+    was_ist_das=(was_ist_das_wrong_list[was_ist_das_wrong_marker])
+    return was_ist_das
