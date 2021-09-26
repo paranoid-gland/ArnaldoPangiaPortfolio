@@ -41,7 +41,9 @@ def burgeramt():
         "part7":dialogue_part7(),
         }
     )
-
+@app.route('/hrrejection')
+def hrrejection():
+    return render_template("hrrejection_input.html")
 
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8000', debug = True)
