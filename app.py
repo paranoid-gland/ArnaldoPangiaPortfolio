@@ -1,6 +1,7 @@
 from flask import Flask, render_template
 from phrasal_verb import definition, generated_verb
 from burgeramt import dialogue_part1, dialogue_part2, dialogue_part3, dialogue_part4,dialogue_part5,dialogue_part6,dialogue_part7
+from hrrejection import hr_part1, hr_part2, hr_part3, hr_part4, hr_part5,hr_part6
 
 
 app = Flask(__name__)
@@ -43,7 +44,14 @@ def burgeramt():
     )
 @app.route('/hrrejection')
 def hrrejection():
-    return render_template("hrrejection_input.html")
-
+    return render_template("hrrejection_input.html", data={
+        "hr_part1":hr_part1(),
+        "hr_part2":hr_part2(),
+        "hr_part3":hr_part3(),
+        "hr_part4":hr_part4(),
+        "hr_part5":hr_part5(),
+        "hr_part6":hr_part6(),
+        }
+    )
 if __name__ == '__main__':
     app.run(host='0.0.0.0', port = '8000', debug = True)
