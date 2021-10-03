@@ -29,7 +29,12 @@ topic_list = ["YouTubers",
               "memes",
               "Tesla",
               "LGBTQ+",
-              "Reddit"]
+              "Reddit",
+              "Black lives matter",
+              "Marc Zuckerberg",
+              "Joe Biden",
+              "all lives matter",
+              "systemic racism"]
 
 adjective_list  = ["whimsical",
                    "smart",
@@ -83,9 +88,13 @@ place_list = ["at the movies",
               "downtown",
               "in Termoli",
               "in a chinese restaurant",
-              "at home",
+              "at the bar",
               "at the club",
-              "at the country club"
+              "at the country club",
+              "having falafel",
+              "at a Israeli restaurant",
+              "at a Jamaican restaurant",
+              "at a Greek restaurant"
               ]
 
 explanation_list = ["It's not you. It's us.",
